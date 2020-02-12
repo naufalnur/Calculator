@@ -7,61 +7,124 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/line1"
-        android:hint="Input1"
+    <TextView
+        android:id="@+id/text"
+
         android:textAlignment="center"
-        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:text="CALCULATOR"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:padding="20dp"
+        android:background="#ff668c"
+        android:layout_marginBottom="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+
     <EditText
-        android:id="@+id/line2"
-        android:layout_below="@+id/line1"
-        android:hint="Input2"
+        android:id="@+id/line"
+        android:hint="Input"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/text"
         android:textAlignment="center"
+        android:layout_centerHorizontal="true"
         android:inputType="number"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"/>
 
     <Button
-         android:id="@+id/jumlah"
-         android:layout_below="@+id/line2"
-         android:hint="Jumlah"
+         android:id="@+id/cos"
+         android:layout_below="@+id/line"
+         android:hint="Cos"
+         android:background="#ffd966"
+         android:layout_marginBottom="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_marginLeft="60dp"
          android:textAlignment="center"
-         android:layout_width="match_parent"
+         android:layout_width="100dp"
          android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/kurang"
-        android:layout_below="@+id/jumlah"
-        android:hint="Kurang"
+        android:id="@+id/sin"
+        android:layout_below="@+id/line"
+        android:layout_toRightOf="@id/cos"
+        android:background="#ffd966"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Sin"
         android:textAlignment="center"
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/kali"
-        android:layout_below="@+id/kurang"
-        android:hint="Kali"
+        android:id="@+id/tan"
+        android:layout_below="@+id/line"
+        android:layout_toRightOf="@id/sin"
+        android:background="#ffd966"
+        android:hint="Tan"
         android:textAlignment="center"
-        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/bagi"
-        android:layout_below="@+id/kali"
-        android:hint="Bagi"
+        android:id="@+id/cosec"
+        android:layout_below="@+id/cos"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Cosec"
+        android:layout_marginLeft="60dp"
+        android:background="#ffd966"
         android:textAlignment="center"
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/sec"
+        android:layout_below="@+id/sin"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Sec"
+        android:layout_toRightOf="@id/cosec"
+        android:background="#ffd966"
+        android:textAlignment="center"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/cotan"
+        android:layout_below="@+id/tan"
+        android:hint="Cotan"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/sec"
+        android:background="#ffd966"
+        android:textAlignment="center"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/logaritma"
+        android:layout_below="@+id/cosec"
+        android:hint="Logaritma"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#ffd966"
+        android:textAlignment="center"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"/>
 
     <TextView
         android:id="@+id/hasil"
-        android:layout_below="@id/bagi"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/logaritma"
         android:textAlignment="center"
+        android:layout_centerHorizontal="true"
         android:text="0.0"
         android:textSize="40dp"
-        android:layout_width="match_parent"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"/>
 </RelativeLayout>
